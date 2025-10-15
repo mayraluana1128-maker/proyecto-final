@@ -1,0 +1,141 @@
+/* 🔹 Franja superior con redes y teléfono */
+.topbar {
+  background: #f1a9f7;
+  color: #ffe989;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 20px;
+  font-size: 14px;
+  font-family: "DynaPuff", cursive;
+}
+
+.social-icons a {
+  color: #c162c8;
+  margin-right: 10px;
+  font-size: 18px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #f2b2ff;
+}
+
+.contact-info {
+  font-weight: bold;
+}
+
+/* 🔹 Barra principal del menú */
+.navbar {
+  background: #e48ce7;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 25px;
+  position: relative;
+}
+
+.nav_logo {
+  font-family: "Playfair Display", serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: white;
+  letter-spacing: 2px;
+}
+
+/* 🔹 Enlaces del menú */
+.nav_items {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav_items a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav_items a:hover {
+  color: #79a4fb;
+}
+
+/* 🔹 Íconos (carrito y lupa) */
+.nav_icons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.nav_icons .icon {
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.nav_icons .icon:hover {
+  color: #639ef2;
+  transform: scale(1.2);
+}
+
+/* 🔹 Botón menú hamburguesa (solo en móvil) */
+.nav_toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.nav_toggle span {
+  width: 30px;
+  height: 3px;
+  background: white;
+  margin-bottom: 5px;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+/* Efecto al abrir */
+.nav_toggle.open span:nth-child(1) {
+  transform: rotate(45deg) translate(6px, 5px);
+}
+
+.nav_toggle.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.nav_toggle.open span:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -5px);
+}
+
+/* 🔹 Menú móvil */
+@media (max-width: 768px) {
+  .nav_items {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    background: #e088e8;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    padding: 20px 0;
+    z-index: 10;
+  }
+
+  .nav_items.open {
+    transform: translateX(0);
+  }
+
+  .nav_toggle {
+    display: flex;
+  }
+
+  .nav_icons {
+    display: none;
+  }
+}
