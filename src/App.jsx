@@ -42,7 +42,6 @@ function App() {
 
   return (
     <div className="App">
-      
       <Navbar />
       <h1 style={{ textAlign: 'center', marginTop: '40px' }}>
         Bienvenido a Mayuri Store 🌿
@@ -52,11 +51,9 @@ function App() {
         Hacemos que regalar sea fácil 😉💓.
         Podés armar tu box 🎁con los artículos que más te gusten! Mirá nuestro catálogo en wsp.
       </h2>
-
+       
       <main className="app-container">
         <h1>Catálogo de Productos</h1>
-
-        
         <input
           type="text"
           placeholder="Buscar producto..."
