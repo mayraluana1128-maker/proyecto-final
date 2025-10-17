@@ -44,7 +44,7 @@ function App() {
     <div className="App">
       <Navbar />
       <h1 style={{ textAlign: 'center', marginTop: '40px' }}>
-        Bienvenido a Mayuri Store 🌿
+        Bienvenido a Mayuri Store 🎁
       </h1>
       <h2 style={{ textAlign: 'center', color: '#555', marginBottom: '30px' }}>
         Creamos regalos para toda ocasión y así sorprender a quien más querés.

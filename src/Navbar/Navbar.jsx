@@ -19,23 +19,14 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* 🔹 Barra principal */}
       <div className="navbar">
         <div className="nav_logo">MAYURI</div>
 
-        {/* 🔹 Menú de enlaces */}
         <div className={`nav_items ${isOpen ? "open" : ""}`}>
           <a href="#">Inicio</a>
           <a href="https://wa.me/c/5493834578763">Contacto</a>
         </div>
 
-        {/* 🔹 Íconos de búsqueda y carrito */}
-        <div className="nav_icons">
-          <FaSearch className="icon" />
-          <FaShoppingCart className="icon" />
-        </div>
-
-        {/* 🔹 Botón menú hamburguesa (móvil) */}
         <div
           className={`nav_toggle ${isOpen ? "open" : ""}`}
           onClick={() => setIsOpen(!isOpen)}
